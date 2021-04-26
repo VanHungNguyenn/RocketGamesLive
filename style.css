@@ -207,3 +207,47 @@ header.black {
     width: 100%;
     text-align: center;
 }
+
+
+/* WELCOME  */
+
+.welcome-outer {
+    padding: 100px 70px;
+    background: url(images/content-bg.png) no-repeat center #010308;
+    background-size: cover;
+}
+
+.welcome-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-left {
+    width: 46%;
+    position: relative;
+}
+
+.welcome-left-img {
+    max-width: 100%;
+}
+
+.youtube-play {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-right {
+    width: 45%;
+    padding: 136px 0 0;
+}
+
+.welcome-right strong {
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 4.0rem;
+    position: relative;
+}
