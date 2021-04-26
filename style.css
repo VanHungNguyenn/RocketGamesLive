@@ -251,3 +251,122 @@ header.black {
     line-height: 4.0rem;
     position: relative;
 }
+
+.welcome-right strong::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    float: left;
+    height: 6px;
+    left: 0;
+    top: -30px;
+    background: #7cba6e;
+}
+
+.welcome-right h4 {
+    font-size: 12.5rem;
+    color: #fff;
+    line-height: 14rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.welcome-right h4 span {
+    color: #7cba6e;
+    font-size: 12.5rem;
+}
+
+.welcome-right p {
+    font-size: 1.9rem;
+    color: #fff;
+    line-height: 3.0rem;
+    font-weight: 600;
+}
+
+.welcome-right a {
+    width: 218px;
+    padding: 17px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 50px 0 0;
+}
+
+
+/* Card  */
+
+.card-outer {
+    background: url(images/cards-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 80px 200px;
+    position: relative;
+}
+
+.card-outer ul {
+    list-style: none;
+    display: flex;
+}
+
+.card-outer li {
+    width: 330px;
+    text-align: left;
+}
+
+.card-outer li h3 {
+    font-size: 4.0rem;
+    color: #fff;
+    line-height: 3.0rem;
+    padding: 0 0 30px 0;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card-outer li h3 span {
+    padding: 0 35px 0 0;
+}
+
+.card-outer li p {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 2.8rem;
+    text-align: left;
+    padding: 0 0 0 65px;
+}
+
+.card-outer:after {
+    content: "";
+    position: absolute;
+    width: 423px;
+    height: 478px;
+    right: 0;
+    float: left;
+    top: -146px;
+    background: url(images/girl-img.png) no-repeat;
+    background-size: 80%;
+}
+
+
+/* Demos */
+
+.demos-outer {
+    padding: 118px 100px;
+}
+
+.demos-outer h4 {
+    font-size: 4.8rem;
+    color: #7cba6e;
+    line-height: 4.0rem;
+    position: relative;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+}
