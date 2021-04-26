@@ -1,0 +1,209 @@
+header {
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.header__navbar-list {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-logo {
+    width: 230px;
+    float: left;
+}
+
+.header__navbar-logo-link {
+    text-decoration: none;
+}
+
+.header__navbar-logo-img {
+    max-width: 100%;
+}
+
+.header__navbar-title {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 60px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-style: normal;
+}
+
+.header__navbar-button {
+    display: flex;
+}
+
+.header__navbar-btn-login {
+    margin-right: 4px;
+}
+
+header.black {
+    background: #000;
+}
+
+.banner-outer {
+    background: url(images/banner-bg.png) no-repeat center !important;
+    background-size: cover;
+    padding: 250px 100px 150px;
+}
+
+.banner-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-left {
+    width: 45%;
+}
+
+.banner-left strong {
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 40px;
+    position: relative;
+}
+
+.banner-left strong::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    float: left;
+    height: 6px;
+    left: 0;
+    top: -30px;
+    background: #fff;
+}
+
+.banner-left h1 {
+    font-size: 12.5rem;
+    color: #fff;
+    line-height: 14rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.banner-left p {
+    font-size: 1.9rem;
+    color: #fff;
+    line-height: 3.0rem;
+    font-weight: 600;
+    padding: 10px 0 0;
+}
+
+.banner-left h1 span {
+    color: #7cba6e;
+    font-size: 12.5rem;
+}
+
+.banner-left-button {
+    width: 218px;
+    padding: 17px 20px;
+    font-size: 1.8rem;
+    margin: 50px 0 0;
+}
+
+.live-games-outer {
+    padding: 100px 0 50px;
+    background: url(images/content-bg.png) no-repeat center top #010308!important;
+    background-size: cover !important;
+}
+
+.live-games-outer h2 {
+    font-size: 6.6rem;
+    color: #fff;
+    line-height: 6.0rem;
+    position: relative;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: bebas neue, cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+
+/* Today outer */
+
+.today-outer {
+    background: url(images/todays-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 70px 100px 85px;
+    display: block;
+}
+
+.today-inner {
+    padding: 0 100px;
+    display: block;
+}
+
+.today-inner h2 {
+    font-size: 6.6rem;
+    color: #fff;
+    line-height: 6.0rem;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: bebas neue, cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.today-list {
+    list-style: none;
+}
+
+.today-list li {
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+}
+
+.today-list li img {
+    max-width: 100%;
+}
+
+.today-list li h3 {
+    font-size: 2.3rem;
+    color: #fff;
+    line-height: 2.0rem;
+    padding: 40px 0 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.today-list li span {
+    font-size: 4.1rem;
+    color: #7cba6e;
+    line-height: 4.0rem;
+    padding: 40px 0 0;
+    text-transform: uppercase;
+    font-family: bebas neue, cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+}
+
+.today-inner p {
+    font-size: 2.2rem;
+    color: #fff;
+    line-height: 2.0rem;
+    padding: 75px 0 0;
+    width: 100%;
+    text-align: center;
+}

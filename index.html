@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketGamesLive</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="toppage">
+            <header>
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-logo">
+                                <a class="header__navbar-logo-link" href="index.html"><img class="header__navbar-logo-img" src="images/logo.png" alt="logo"></a>
+                            </li>
+                            <li class="header__navbar-menu">
+                                <div class="header__navbar-menu-list">
+                                    <a href="" class="header__navbar-title">Dashboard</a>
+                                    <a href="" class="header__navbar-title">Live Games</a>
+                                    <a href="" class="header__navbar-title">Affiliate</a>
+                                    <a href="" class="header__navbar-title">Policy</a>
+                                    <a href="" class="header__navbar-title">Login</a>
+                                    <a href="" class="header__navbar-title">Register</a>
+                                </div>
+
+                            </li>
+                            <li class="header__navbar-button">
+                                <a href="" class="header__navbar-btn-login btn">LOGIN</a>
+                                <a href="" class="header__navbar-btn btn">REGISTER</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="banner-outer">
+                <div class="grid">
+                    <div class="banner-inner">
+                        <div class="banner-left">
+                            <strong>Welcome to</strong>
+                            <h1>Live <span>Casino</span></h1>
+                            <p>Play Live Blackjack, Live Roulette, and Live Baccarat and Live Ultimate Texas Hold'em from the comfort of your home.</p>
+                            <a href="" class="banner-left-button btn">PLAY NOW</a>
+                        </div>
+                        <div class="banner-right">
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- <section class="live-games-outer">
+            <div class="grid">
+                <h2 class="live-games-title">Live Games</h2>
+                <div class="live-games-left live-gm">
+                    <ul>
+                        <li>
+                            <div class="game-imgs">
+                                <img src="images/live-game-img1.png" alt="">
+                            </div>
+                            <div class="game-img-details">
+                                <h3>Blackjack <span>$5 - $1,500</span></h3>
+                            </div>
+                            <div class="play-btn">
+                                <a href="#">Play now</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section> -->
+
+        <section class="today-outer">
+            <div class="today-inner grid">
+                <h2>Today's Activity</h2>
+                <ul class="today-list">
+                    <li><img src="images/today-icon1.png" alt="">
+                        <h3>TOTAL BLACKJACK WIN</h3><span>$881938</span>
+                    </li>
+                    <li><img src="images/today-icon2.png" alt="">
+                        <h3>TOTAL BACCARAT WIN</h3><span>$981824</span>
+                    </li>
+                    <li><img src="images/today-icon3.png" alt="">
+                        <h3>TOTAL BLACKJACK WIN</h3><span>$881938</span>
+                    </li>
+                </ul>
+                <p>ldbrown won $4 playing SCALABLEBLACKJACK</p>
+            </div>
+        </section>
+
+
+    </div>
+
+    <script type="text/javascript">
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $('header').addClass('black');
+            } else {
+                $('header').removeClass('black');
+            }
+        });
+    </script>
+</body>
+
+</html>
