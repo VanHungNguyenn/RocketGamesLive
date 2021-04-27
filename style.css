@@ -539,4 +539,209 @@ footer {
     display: inline-block;
     width: 80%;
     max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-left {
+    padding: 150px 0 0;
+    width: 50%;
+}
+
+.register-left-img {
+    max-width: 100%;
+}
+
+.register-right {
+    width: 45%;
+    padding: 60px 0 0;
+}
+
+.register-right h1 {
+    font-size: 5.6rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 0 0 30px;
+    line-height: 5.0rem;
+    text-transform: uppercase;
+    font-family: bebas neue, cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.register-right form {
+    width: 100%;
+    float: left;
+    padding: 50px 0 0;
+}
+
+.register-right form .textfield {
+    width: 100%;
+    padding: 17px 40px;
+    color: #b0b0b0;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 12px;
+    background: #fff;
+    font-family: raleway, sans-serif;
+    border-radius: 50px;
+    outline: none;
+}
+
+.forgot-password {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0 0;
+}
+
+.forgot-password-login {
+    width: 100%;
+    text-align: left;
+    padding: 20px 0 0;
+}
+
+.forgot-password span {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+
+.blue-text {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.blue-text:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 17px 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    margin-top: 18px;
+    background: #7cba6e;
+    font-family: raleway, sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.login-button:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Affiliate policy */
+
+.policy-outer {
+    background: url(images/banner-bg.png) no-repeat center!important;
+    background-size: cover;
+    padding: 220px 0 0;
+    height: 390px;
+    z-index: 99;
+}
+
+.policy__title {
+    font-size: 6.6rem;
+    color: #7cba6e;
+    line-height: 6.0rem;
+    position: relative;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: bebas neue, cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+}
+
+.policy table {
+    text-align: center;
+    color: #fff;
+}
+
+.tb-heading {
+    width: 100%;
+    padding: 23px 0;
+    background: #7bb96c;
+    border-radius: 6px 6px 0 0;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+table>tr {
+    vertical-align: middle;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    font-size: 1.6rem;
+}
+
+.policy th {
+    padding: 20px 0;
+}
+
+.policy table td {
+    padding: 20px 0;
+    border-right: 1px solid #454c56;
+    line-height: 2.2rem;
+}
+
+.policy table td:last-child {
+    border-right: none;
+}
+
+.gray-bg {
+    background-color: #0e0e0e;
+}
+
+.policy-desc {
+    padding: 40px 0 0;
+    width: 100%;
+    text-align: left;
+}
+
+.policy-desc p {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    color: #ffffff;
+    line-height: 3.0rem;
 }
