@@ -745,3 +745,42 @@ td {
     color: #ffffff;
     line-height: 3.0rem;
 }
+
+.policy-note {
+    width: 100%;
+    padding: 60px 0 40px;
+    text-align: left;
+}
+
+.policy-note h3 {
+    font-size: 2.0rem;
+    color: #7cba6e;
+    font-weight: 700;
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 40px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.policy-note p {
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 3.0rem;
+    margin-bottom: 25px;
+}
+
+.policy-note p img {
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.policy-note p a {
+    color: #7cba6e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.policy-note p a:hover {
+    text-decoration: underline;
+}
