@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketGamesLive - Register</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body class="login-bg">
+    <div class="app">
+        <div class="toppage">
+            <header>
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-logo">
+                                <a class="header__navbar-logo-link" href="index.html"><img class="header__navbar-logo-img" src="images/logo.png" alt="logo"></a>
+                            </li>
+                            <li class="header__navbar-menu">
+                                <div class="header__navbar-menu-list">
+                                    <a href="" class="header__navbar-title">Dashboard</a>
+                                    <a href="" class="header__navbar-title">Live Games</a>
+                                    <a href="" class="header__navbar-title">Affiliate</a>
+                                    <a href="" class="header__navbar-title">Policy</a>
+                                    <a href="" class="header__navbar-title">Login</a>
+                                    <a href="" class="header__navbar-title">Register</a>
+                                </div>
+
+                            </li>
+                            <li class="header__navbar-button">
+                                <a href="" class="header__navbar-btn-login btn">LOGIN</a>
+                                <a href="" class="header__navbar-btn btn">REGISTER</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="login-outer">
+                <div class="login-inner grid">
+
+                    <div class="login-left register-left">
+                        <img src="images/register-left-img.png" alt="">
+                    </div>
+                    <div class="login-right register-right">
+                        <h1><span>Welcome to</span>
+                            <br>RocketGamesLive
+                        </h1>
+                        <form>
+                            <input name="first_name" type="text" placeholder="First Name" class="textfield">
+                            <input name="last_name" type="text" placeholder="Last Name" class="textfield">
+                            <input name="username" type="text" placeholder="Username" class="textfield">
+                            <input name="email" type="email" placeholder="Email Id" class="textfield">
+                            <input name="password" type="password" placeholder="Password" class="textfield">
+                            <input name="confirm_password" type="password" placeholder="Confirm Password" class="textfield">
+                            <input name="referrer" type="text" placeholder="Referral Id" class="textfield" value="">
+                            <div class="forgot-password">
+                                <span>By creating an account you agree to our 
+                                        <a class="blue-text" href=""> terms &amp; conditions</a>
+                                    </span>
+                            </div>
+                            <input type="submit" placeholder="Register" class="login-button" value="Register">
+                            <div class="forgot-password" style="margin-top: 15px;">
+                                <a href="">Already have an account? Click to Login</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <footer>
+                <div class="grid">
+                    <div class="auto-container">
+                        <div class="footer-nav">
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Live Games</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="social-outer">
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-outer">
+                    <div class="grid copyright-inner">
+                        <div class="copyright-left">
+                            <ul>
+                                <li><a href="">Terms & conditions</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright-right">
+                            <p>Copyright © 2021 - RocketGamesLive. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript">
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop()) {
+                    $('header').addClass('black');
+                } else {
+                    $('header').removeClass('black');
+                }
+            });
+        </script>
+</body>
+
+</html>

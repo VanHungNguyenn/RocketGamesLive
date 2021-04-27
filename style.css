@@ -370,3 +370,173 @@ header.black {
     font-style: normal;
     text-align: left;
 }
+
+
+/* Faq */
+
+.faq-outer {
+    background-color: #7cba6e;
+}
+
+.faq-right {
+    width: 100%;
+    background-color: #7cba6e;
+    padding: 100px 100px 32px;
+    text-align: left;
+}
+
+.faq-right h5 {
+    font-size: 6.0rem;
+    color: #fff;
+    line-height: 6.0rem;
+    padding: 0 0 54px;
+    text-transform: uppercase;
+    font-family: bebas neue, cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    text-align: center;
+}
+
+
+/* Footer  */
+
+footer {
+    padding: 72px 0 0;
+    text-align: center;
+    background: #010308;
+}
+
+.auto-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    width: 100%;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-nav li a:hover {
+    color: var(--primary-color);
+}
+
+.social-outer {
+    width: 100%;
+    padding: 40px 0 0;
+}
+
+.social-outer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-outer li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.social-outer li a {
+    font-size: 2.6rem;
+    color: #3a3741;
+    transition: transform .5s ease-in-out;
+    text-align: center;
+}
+
+.social-outer li a .fab {
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+.social-outer li a .fab:hover {
+    color: var(--primary-color);
+}
+
+.copyright-outer {
+    width: 100%;
+    padding: 30px 100px;
+    background: #26242b;
+    margin: 60px 0 0;
+}
+
+.copyright-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-left {
+    width: auto;
+}
+
+.copyright-left ul {
+    list-style: none;
+    display: flex;
+}
+
+.copyright-left li {
+    padding: 0 15px;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.copyright-left li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright-left li a:hover {
+    color: var(--primary-color);
+}
+
+.copyright-right {
+    width: auto;
+}
+
+.copyright-right p {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+
+/* Register  */
+
+.login-bg {
+    background: url(images/banner-bg.png) no-repeat center #181421;
+    background-size: cover;
+}
+
+.login-outer {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.login-inner {
+    padding: 70px 95px 50px;
+    border: 1px solid #353335;
+    display: inline-block;
+    width: 80%;
+    max-width: 1600px;
+}
