@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="app">
         <div class="toppage">
-            <header>
+            <header class="header">
                 <div class="grid">
                     <nav class="header__navbar">
                         <ul class="header__navbar-list">
@@ -26,15 +27,26 @@
                                 <a class="header__navbar-logo-link" href="index.html"><img class="header__navbar-logo-img" src="images/logo.png" alt="logo"></a>
                             </li>
                             <li class="header__navbar-menu">
-                                <div class="header__navbar-menu-list">
-                                    <a href="login.html" class="header__navbar-title">Dashboard</a>
-                                    <a href="login.html" class="header__navbar-title">Live Games</a>
-                                    <a href="login.html" class="header__navbar-title">Affiliate</a>
-                                    <a href="affiliate-policy.html" class="header__navbar-title">Policy</a>
-                                    <a href="login.html" class="header__navbar-title">Login</a>
-                                    <a href="register.html" class="header__navbar-title">Register</a>
-                                </div>
-
+                                <ul class="header__navbar-menu-list">
+                                    <li>
+                                        <a href="login.html" class="header__navbar-title">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html" class="header__navbar-title">Live Games</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html" class="header__navbar-title">Affiliate</a>
+                                    </li>
+                                    <li>
+                                        <a href="affiliate-policy.html" class="header__navbar-title">Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html" class="header__navbar-title">Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="register.html" class="header__navbar-title">Register</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="header__navbar-button">
                                 <a href="login.html" class="header__navbar-btn-login btn">LOGIN</a>
@@ -62,14 +74,93 @@
             </section>
         </div>
 
-        <!-- <section class="live-games-outer">
-            <div class="grid">
+        <section class="live-games-outer">
+            <div class="grid live-games-inner">
                 <h2 class="live-games-title">Live Games</h2>
-                <div class="live-games-left live-gm">
-                    <ul>
-                        <li>
+                <div class="live-games-left">
+                    <ul class="live-games-list">
+                        <li class="live-games-item">
                             <div class="game-imgs">
                                 <img src="images/live-game-img1.png" alt="">
+                            </div>
+                            <div class="game-img-details">
+                                <h3>Blackjack <span>$5 - $1,500</span></h3>
+                            </div>
+                            <div class="play-btn">
+                                <a href="#">Play now</a>
+                            </div>
+                        </li>
+                        <li class="live-games-item">
+                            <div class="game-imgs">
+                                <img src="images/live-game-img2.png" alt="">
+                            </div>
+                            <div class="game-img-details">
+                                <h3>Blackjack <span>$5 - $1,500</span></h3>
+                            </div>
+                            <div class="play-btn">
+                                <a href="#">Play now</a>
+                            </div>
+                        </li>
+                        <li class="live-games-item">
+                            <div class="game-imgs">
+                                <img src="images/live-game-img3.png" alt="">
+                            </div>
+                            <div class="game-img-details">
+                                <h3>Blackjack <span>$5 - $1,500</span></h3>
+                            </div>
+                            <div class="play-btn">
+                                <a href="#">Play now</a>
+                            </div>
+                        </li>
+                        <li class="live-games-item">
+                            <div class="game-imgs">
+                                <img src="images/live-game-img2.png" alt="">
+                            </div>
+                            <div class="game-img-details">
+                                <h3>Blackjack <span>$5 - $1,500</span></h3>
+                            </div>
+                            <div class="play-btn">
+                                <a href="#">Play now</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="live-games-list">
+                        <li class="live-games-item">
+                            <div class="game-imgs">
+                                <img src="images/live-game-img1.png" alt="">
+                            </div>
+                            <div class="game-img-details">
+                                <h3>Blackjack <span>$5 - $1,500</span></h3>
+                            </div>
+                            <div class="play-btn">
+                                <a href="#">Play now</a>
+                            </div>
+                        </li>
+                        <li class="live-games-item">
+                            <div class="game-imgs">
+                                <img src="images/live-game-img2.png" alt="">
+                            </div>
+                            <div class="game-img-details">
+                                <h3>Blackjack <span>$5 - $1,500</span></h3>
+                            </div>
+                            <div class="play-btn">
+                                <a href="#">Play now</a>
+                            </div>
+                        </li>
+                        <li class="live-games-item">
+                            <div class="game-imgs">
+                                <img src="images/live-game-img3.png" alt="">
+                            </div>
+                            <div class="game-img-details">
+                                <h3>Blackjack <span>$5 - $1,500</span></h3>
+                            </div>
+                            <div class="play-btn">
+                                <a href="#">Play now</a>
+                            </div>
+                        </li>
+                        <li class="live-games-item">
+                            <div class="game-imgs">
+                                <img src="images/live-game-img2.png" alt="">
                             </div>
                             <div class="game-img-details">
                                 <h3>Blackjack <span>$5 - $1,500</span></h3>
@@ -81,8 +172,9 @@
                     </ul>
                 </div>
 
+
             </div>
-        </section> -->
+        </section>
 
         <section class="today-outer">
             <div class="today-inner grid">
@@ -155,15 +247,79 @@
             <div class="grid">
                 <div class="faq-right">
                     <h5>FREQUENTLY ASKED QUESTIONS</h5>
-                    <!-- <div class="accordion">
-                        <div class="faq-content">
-                            <input type="radio" name="example_accordion" id="section1" class="accordion__input">
-                            <label for="section1" class="accordion__label">Question number 02 goes in here?</label>
-                            <div class="accordion__content">
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.</p>
+                    <div class="accordion">
+                        <div class="ques">
+                            <div class="ask">
+                                <div class="ask__content">Question number 02 goes in here?</div>
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="answer">
+                                <div class="panel">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div> -->
+                        <div class="ques">
+                            <div class="ask">
+                                <div class="ask__content">Question number 02 goes in here?</div>
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="answer">
+                                <div class="panel">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ques">
+                            <div class="ask">
+                                <div class="ask__content">Question number 02 goes in here?</div>
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="answer">
+                                <div class="panel">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ques">
+                            <div class="ask">
+                                <div class="ask__content">Question number 02 goes in here?</div>
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="answer">
+                                <div class="panel">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ques">
+                            <div class="ask">
+                                <div class="ask__content">Question number 02 goes in here?</div>
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="answer">
+                                <div class="panel">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -207,14 +363,7 @@
         </footer>
     </div>
 
-    <script type="text/javascript">
-        $(window).on("scroll", function() {
-            if ($(window).scrollTop()) {
-                $('header').addClass('black');
-            } else {
-                $('header').removeClass('black');
-            }
-        });
+    <script src="main.js">
     </script>
 </body>
 
