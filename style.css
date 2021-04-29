@@ -272,11 +272,12 @@ header.black {
 
 .today-list {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .today-list li {
     width: 32%;
-    display: inline-block;
     text-align: center;
 }
 
@@ -418,6 +419,7 @@ header.black {
 .card-outer li {
     width: 330px;
     text-align: left;
+    z-index: 2;
 }
 
 .card-outer li h3 {
@@ -956,6 +958,9 @@ td {
     }
     .header__navbar-title {
         padding: 0px 10px;
+    }
+    .card-outer:after {
+        display: none;
     }
 }
 
