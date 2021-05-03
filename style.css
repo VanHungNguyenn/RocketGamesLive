@@ -17,7 +17,7 @@ header {
 
 .header__navbar-logo {
     width: 230px;
-    float: left;
+    /* float: left; */
 }
 
 .header__navbar-logo-link {
@@ -97,7 +97,7 @@ header.black {
     content: "";
     position: absolute;
     width: 40px;
-    float: left;
+    /* float: left; */
     height: 6px;
     left: 0;
     top: -30px;
@@ -516,7 +516,7 @@ footer {
 }
 
 .auto-container {
-    width: 1170px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -680,7 +680,7 @@ footer {
 
 .register-right form {
     width: 100%;
-    float: left;
+    /* float: left; */
     padding: 50px 0 0;
 }
 
@@ -962,11 +962,129 @@ td {
     .card-outer:after {
         display: none;
     }
+    .live-games-inner {
+        padding: 0 50px;
+    }
+    .today-inner {
+        padding: 0 50px;
+    }
+    .card-outer {
+        padding: 80px 100px;
+    }
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .header__navbar-list {
+        padding: 0 20px;
+    }
+    .header__navbar-logo {
+        width: 150px;
+    }
+    .btn {
+        height: 40px;
+        min-width: 30px;
+        padding: 2px 16px;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+    .header__navbar-title {
+        font-size: 1.4rem;
+    }
+    .live-games-inner {
+        padding: 0 20px;
+    }
+    .today-inner {
+        padding: 0;
+    }
+    .welcome-right {
+        padding: 0;
+    }
+    .welcome-right a {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+    .card-outer {
+        padding: 80px 50px;
+    }
+    .copyright-left li {
+        font-size: 1.2rem;
+    }
+    .copyright-right p {
+        font-size: 1.2rem;
+    }
+    .copyright-outer {
+        padding: 30px 20px;
+    }
+}
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .header__navbar-list {
+        padding: 0 10px;
+    }
+    .btn {
+        height: 34px;
+        min-width: 30px;
+        padding: 2px 12px;
+        font-weight: 500;
+        font-size: 1.0rem;
+        line-height: 1.0rem;
+    }
+    .header__navbar-title {
+        font-size: 1.2rem;
+    }
+    .banner-left strong {
+        font-size: 1.7rem;
+    }
+    .banner-left h1 {
+        font-size: 6.8rem;
+        line-height: 7.0rem;
+    }
+    .banner-left h1 span {
+        font-size: 6.8rem;
+    }
+    .banner-left p {
+        font-size: 1.7rem;
+    }
+    .play-btn a {
+        width: 90px;
+        display: inline-block;
+        padding: 6px 14px;
+        font-size: 1.0rem;
+        font-weight: 600;
+    }
+    .today-list li h3 {
+        font-size: 1.8rem;
+    }
+    .welcome-right strong {
+        font-size: 1.7rem;
+    }
+    .welcome-right h4 {
+        font-size: 6.8rem;
+    }
+    .welcome-right h4 span {
+        font-size: 6.8rem;
+    }
+    .welcome-right p {
+        font-size: 1.7rem;
+    }
+    .card-outer li h3 {
+        font-size: 2.4rem;
+        padding: 0 0 10px 0;
+    }
+    .card-outer li h3 span {
+        padding: 0 10px 0 0;
+    }
+    .card-outer li p {
+        font-size: 1.4rem;
+        line-height: 2.0rem;
+        text-align: left;
+        padding: 0 0 0 30px;
+    }
+    .faq-right {
+        padding: 50px 50px 20px;
+    }
+}
 
 @media (max-width: 768px) {}
 
