@@ -134,6 +134,29 @@ header.black {
     margin: 50px 0 0;
 }
 
+.banner-right {
+    padding: 50px 0 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-item {
+    width: 32%;
+    text-align: center;
+}
+
+.banner-item img {
+    width: 100%;
+}
+
 .live-games-outer {
     padding: 100px 0 50px;
     background: url(images/content-bg.png) no-repeat center top #010308!important;
@@ -477,6 +500,22 @@ header.black {
     font-weight: normal;
     font-style: normal;
     text-align: left;
+}
+
+.demos-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.demos-item {
+    width: 27%;
+    text-align: center;
+}
+
+.demos-item img {
+    width: 100%;
 }
 
 
@@ -951,9 +990,15 @@ td {
         max-width: 100%;
         margin: 0 auto;
     }
+    .live-games-inner {
+        padding: 0 50px;
+    }
 }
 
 @media (max-width: 1400px) {
+    .banner-outer {
+        padding: 100px 50px;
+    }
     .btn {
         min-width: 50px;
         padding: 6px 26px;
