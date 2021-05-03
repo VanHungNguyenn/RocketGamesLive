@@ -644,7 +644,6 @@ footer {
 .login-inner {
     padding: 70px 95px 50px;
     border: 1px solid #353335;
-    display: inline-block;
     width: 80%;
     max-width: 1600px;
     display: flex;
@@ -764,6 +763,11 @@ footer {
     padding: 220px 0 0;
     height: 390px;
     z-index: 99;
+}
+
+.table-width {
+    width: 1170px;
+    margin: 0 auto;
 }
 
 .policy__title {
@@ -1086,6 +1090,68 @@ td {
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .login-outer {
+        padding-top: 50px;
+    }
+    .login-inner {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    .register-left {
+        padding: 0;
+        width: 100%;
+    }
+    .register-right {
+        padding: 0;
+        width: 100%;
+    }
+    .header__navbar-button {
+        display: none;
+    }
+    header {
+        height: 50px;
+    }
+    /* .header__navbar-menu {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        display: block;
+        text-align: left;
+        background-color: #181421;
+    }
+    .header__navbar-menu-list {
+        display: block;
+        padding: 0;
+    }
+    .header__navbar-title {
+        padding: 11px 15px;
+        display: inline-block;
+    }
+    .header__navbar-menu-list li {
+        cursor: pointer;
+        transition: ease all 1s;
+    }
+    .header__navbar-menu-list li:hover {
+        background-color: #489237;
+        padding-left: 16px;
+    } */
+    .footer-nav li {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .copyright-inner {
+        flex-direction: column;
+    }
+    .copyright-left {
+        margin-bottom: 20px;
+    }
+    .copyright-left ul {
+        justify-content: center;
+    }
+}
 
 @media (max-width: 576px) {}
