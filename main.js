@@ -19,3 +19,13 @@ for (i = 0; i < ask.length; i++) {
         }
     })
 }
+
+var menu = document.getElementById("menu");
+
+function showMenu() {
+    if (menu.style.display == "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}

@@ -6,6 +6,7 @@ header {
     position: fixed;
     width: 100%;
     text-align: center;
+    z-index: 10;
 }
 
 .header__navbar-list {
@@ -17,7 +18,6 @@ header {
 
 .header__navbar-logo {
     width: 230px;
-    /* float: left; */
 }
 
 .header__navbar-logo-link {
@@ -27,6 +27,12 @@ header {
 .header__navbar-menu-list {
     list-style: none;
     display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar-icon {
+    display: none;
 }
 
 
@@ -97,7 +103,6 @@ header.black {
     content: "";
     position: absolute;
     width: 40px;
-    /* float: left; */
     height: 6px;
     left: 0;
     top: -30px;
@@ -190,11 +195,12 @@ header.black {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .live-games-item {
     cursor: pointer;
-    width: 24%;
+    width: 23%;
     margin: 0 10px 40px 10px;
     position: relative;
     display: list-item;
@@ -718,7 +724,6 @@ footer {
 
 .register-right form {
     width: 100%;
-    /* float: left; */
     padding: 50px 0 0;
 }
 
@@ -801,7 +806,7 @@ footer {
     background-size: cover;
     padding: 220px 0 0;
     height: 390px;
-    z-index: 99;
+    z-index: 2;
 }
 
 .table-width {
@@ -953,6 +958,7 @@ td {
     align-items: center;
     height: 62px;
     margin: 0 0 10px;
+    transition: ease all 1s;
 }
 
 .ask__content {
@@ -962,7 +968,6 @@ td {
     font-size: 2.0rem;
     color: #fff;
     padding: 19px 70px;
-    background-color: #010308;
     text-decoration: none;
 }
 
@@ -997,11 +1002,13 @@ td {
 
 @media (max-width: 1400px) {
     .banner-outer {
-        padding: 100px 50px;
+        padding: 150px 50px;
     }
     .btn {
         min-width: 50px;
-        padding: 6px 26px;
+        height: 40px;
+        padding: 0px 26px;
+        line-height: 1.4rem;
         font-weight: 500;
         font-size: 1.4rem;
     }
@@ -1023,6 +1030,9 @@ td {
 }
 
 @media (max-width: 1200px) {
+    .live-games-item {
+        width: 22%;
+    }
     .header__navbar-list {
         padding: 0 20px;
     }
@@ -1064,6 +1074,9 @@ td {
     }
     .copyright-outer {
         padding: 30px 20px;
+    }
+    .table-width {
+        width: 90%;
     }
 }
 
@@ -1133,9 +1146,85 @@ td {
     .faq-right {
         padding: 50px 50px 20px;
     }
+    .ask__content {
+        padding: 19px 30px;
+    }
+    .ask .fa-chevron-down {
+        padding-right: 30px;
+    }
+    .today-inner p {
+        line-height: 3rem;
+    }
+    .table-width {
+        width: 90%;
+    }
+    .tb-heading {
+        font-size: 1.4rem;
+    }
+    td {
+        font-size: 1.3rem;
+    }
+    .policy-desc p {
+        font-size: 1.4rem;
+    }
+    .policy-note p {
+        font-size: 1.4rem;
+    }
+    .policy-outer {
+        padding: 150px 0 0;
+    }
 }
 
 @media (max-width: 768px) {
+    .live-games-item {
+        width: 45%;
+    }
+    .live-games-outer h2,
+    .today-inner h2,
+    .demos-outer h4,
+    .faq-right h5 {
+        font-size: 4.0rem;
+    }
+    .banner-outer {
+        padding: 100px 30px;
+    }
+    .banner-inner {
+        flex-direction: column;
+    }
+    .banner-left {
+        width: 100%;
+    }
+    .banner-right {
+        width: 100%;
+    }
+    .today-list {
+        flex-direction: column;
+    }
+    .today-list li {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .welcome-inner {
+        flex-direction: column;
+    }
+    .welcome-left {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .welcome-right {
+        width: 100%;
+    }
+    .card-outer {
+        padding: 50px 30px;
+    }
+    .card-outer ul {
+        flex-direction: column;
+        display: flex;
+    }
+    .card-outer li {
+        margin-bottom: 30px;
+        width: 100%;
+    }
     .login-outer {
         padding-top: 50px;
     }
@@ -1157,14 +1246,14 @@ td {
     header {
         height: 50px;
     }
-    /* .header__navbar-menu {
+    .header__navbar-menu {
         position: fixed;
         top: 50px;
         left: 0;
         right: 0;
-        display: block;
         text-align: left;
         background-color: #181421;
+        display: none;
     }
     .header__navbar-menu-list {
         display: block;
@@ -1181,7 +1270,7 @@ td {
     .header__navbar-menu-list li:hover {
         background-color: #489237;
         padding-left: 16px;
-    } */
+    }
     .footer-nav li {
         display: inline-block;
         padding: 0 10px;
@@ -1197,6 +1286,70 @@ td {
     .copyright-left ul {
         justify-content: center;
     }
+    .game-img-details {
+        padding: 2px 2px 0;
+    }
+    .game-img-details h3,
+    .game-img-details h3 span {
+        font-size: 1.4rem;
+    }
+    .demos-images {
+        flex-direction: column;
+    }
+    .demos-item {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+    .today-inner p {
+        font-size: 1.6rem;
+    }
+    .header__navbar-icon {
+        display: block;
+    }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .ask__content {
+        padding: 19px 15px;
+        font-size: 1.4rem;
+    }
+    .ask .fa-chevron-down {
+        padding-right: 15px;
+    }
+    .demos-outer {
+        padding: 50px 30px;
+    }
+    .demos-item {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .banner-images {
+        flex-direction: column;
+    }
+    .banner-item {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .live-games-item {
+        width: 44%;
+    }
+    .welcome-right h4 {
+        line-height: 6.8rem;
+    }
+    .ask {
+        height: 50px;
+    }
+    .ask__content {
+        font-size: 1.2rem;
+        padding: 6px 10px;
+    }
+    .tb-heading {
+        font-size: 1.0rem;
+    }
+}
+
+.menu-icon {
+    font-size: 2.0rem;
+    color: #fff;
+    cursor: pointer;
+}
